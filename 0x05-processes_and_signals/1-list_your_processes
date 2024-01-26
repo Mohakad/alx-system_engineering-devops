@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #show all prosse
 
-ps aux
+ps au
