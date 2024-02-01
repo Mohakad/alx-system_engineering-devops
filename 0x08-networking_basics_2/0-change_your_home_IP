@@ -1,0 +1,7 @@
+#!/bin/bash
+# Bash script that configures an Ubuntu server
+
+cp /etc/hosts /etc/hosts.n
+echo "127.0.0.2 localhost" > /etc/hosts.n
+echo "8.8.8.8 facebook.com" >> /etc/hosts.n
+cp -f /etc/hosts.n /etc/hosts
