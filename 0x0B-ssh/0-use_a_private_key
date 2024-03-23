@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # use ssh
 
-ssh -i ~/.ssh/school ubuntu@54.236.33.44
+ssh -i ~/.ssh/school ubuntu@54.90.1.15
