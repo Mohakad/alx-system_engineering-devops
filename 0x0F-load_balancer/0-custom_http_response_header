@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# doubles the number
+
+apt-get  update ; apt-get -y install nginx
+
+hname="http {\n\tadd_header X-Served-By \"$HOSTNAME\";"
+sudo sed -i "s/http {/$hname/" /etc/nginx/nginx.conf
+sudo service nginx restart
