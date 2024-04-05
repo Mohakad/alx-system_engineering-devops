@@ -5,7 +5,7 @@ apt-get update
 apt-get -y install --no-install-recommends software-properties-common
 add-apt-repository ppa:vbernat/haproxy-2.8
 apt-get install haproxy=2.8.\*
-
+#shellcheck disable=SC2181
 DOMAIN_NAME='myweb01.tech'
 INIT_FILE='/etc/default/haproxy'
 CONFIG_FILE='/etc/haproxy/haproxy.cfg'
