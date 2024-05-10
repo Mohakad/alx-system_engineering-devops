@@ -7,7 +7,7 @@ import requests
 def number_of_subscribers(subreddit):
     """n of sub"""
     url = f'https://oauth.reddit.com/r/{subreddit}/about'
-    headers = {'User-Agent': 'countsb'}
+    headers = {'User-Agent': 'countsb/v0'}
     response = requests.get(url, headers=headers, allow_redirects=False)
 
     if response.status_code == 200:
